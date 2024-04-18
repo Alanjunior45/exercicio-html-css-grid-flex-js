@@ -5,21 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio+html+css+js</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <script src="soma.js"></script>
+    <script src="buscarDados.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
-    <footer>Treiando</footer>
-    <aside></aside>
+
+    <header>
+        <h1>Home</h1>
+        <a href="#">Principal</a>
+        <a href="contato.html">Contato</a>
+    </header>
+
     <main>
-    <div id="dviUm">
-        <article>Treinando</article>
+    <div>
+        soma
+        <input type="number" name="" id="inputNumeroUm">
+        <input type="number" name="" id="inputNumeroDois">
+        <button onclick="processarSoma()">Somar</button>
+
+        <div id="resultadoSoma">
+            Resultado: 0
+        </div>
+
     </div>
-    <div id="divDois">
-        <article>Principal</article>
-    </div>
-    <div id="divTres">
-        <article>Contato</article>
+
+    <div>
+        Pokemon
+        <input type="text" name="" id="idPokemon">
+        <button onclick="processarPokemon()">Buscar</button>
+
+        <div>
+            Pokemon:
+        </div>
     </div>
 </main>
 </body>
